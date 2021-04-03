@@ -3,7 +3,7 @@ const matchList = document.getElementById('match-list')
 
 // Search states
 const searchStates = async searchText => {
-  const res = await fetch('../data/ind_states.json');
+  const res = await fetch('https://github.com/mmv-dev/js-indianstatelookup/blob/main/data/ind_states.json');
   const states = await res.json();
 
   // Get matches to current text input
